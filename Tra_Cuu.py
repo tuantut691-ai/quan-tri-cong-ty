@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 # --- 1. CẤU HÌNH & CSS GIAO DIỆN ---
 st.set_page_config(
-    page_title="Tra Cứu Thần Số Học VIP",
+    page_title="CỔNG THÔNG TIN CÔNG TÁC DOANH NGHIỆP",
     page_icon="🔮",
     layout="centered",
     initial_sidebar_state="expanded"
@@ -16,8 +16,8 @@ st.set_page_config(
 # Biến cấu hình
 APP_URL = "https://share.streamlit.io/..." 
 ADMIN_ZALO = "0909000xxx" 
-ADMIN_EMAIL = "admin@quangluu_pholu.com"
-ADMIN_PHONE = "0909.000.xxx_Quảng phố Hô Nô Lu Lu nhé !"
+ADMIN_EMAIL = "admin@tna.com"
+ADMIN_PHONE = "0909.000.xxx HOÀNG TÚ "
 
 # CSS tùy chỉnh
 st.markdown("""
@@ -87,7 +87,7 @@ if not st.session_state["client_auth"]:
     with c2:
         pwd = st.text_input("Nhập mật khẩu truy cập:", type="password")
         if st.button("Truy cập hệ thống", use_container_width=True):
-            if pwd == "khachhang2026":
+            if pwd == "nhanvien2026":
                 st.session_state["client_auth"] = True
                 st.rerun()
             else:
@@ -179,4 +179,4 @@ with f_col2:
     st.link_button("💬 Chat Zalo Admin", f"https://zalo.me/{ADMIN_ZALO}", use_container_width=True)
     st.link_button("🌐 Fanpage Facebook", "https://facebook.com", use_container_width=True)
 
-st.caption("© 2026 Tra Cứu Thần Số Học | Phát triển bởi Team Admin")
+st.caption("© 2026 Tra Cứu Thông Tin | Phát triển bởi Team Admin")
