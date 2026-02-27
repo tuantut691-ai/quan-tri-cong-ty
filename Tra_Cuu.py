@@ -81,7 +81,7 @@ if "client_auth" not in st.session_state:
     st.session_state["client_auth"] = False
 
 if not st.session_state["client_auth"]:
-    st.markdown("<h1 style='text-align: center;'>🔮 Cổng Tra Cứu Thần Số Học</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🔮 Cổng Tra Cứu </h1>", unsafe_allow_html=True)
     st.write("---")
     c1, c2, c3 = st.columns([1,2,1])
     with c2:
@@ -180,3 +180,4 @@ with f_col2:
     st.link_button("🌐 Fanpage Facebook", "https://facebook.com", use_container_width=True)
 
 st.caption("© 2026 Tra Cứu Thông Tin | Phát triển bởi Team Admin")
+
