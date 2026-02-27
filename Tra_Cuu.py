@@ -16,7 +16,7 @@ st.set_page_config(
 # Biến cấu hình
 APP_URL = "https://share.streamlit.io/..." 
 ADMIN_ZALO = "0909000xxx" 
-ADMIN_EMAIL = "admin@tna.com"
+ADMIN_EMAIL = "tuantu691@gmail.com"
 ADMIN_PHONE = "0909.000.xxx HOÀNG TÚ "
 
 # CSS tùy chỉnh
@@ -180,5 +180,6 @@ with f_col2:
     st.link_button("🌐 Fanpage Facebook", "https://facebook.com", use_container_width=True)
 
 st.caption("© 2026 Tra Cứu Thông Tin | Phát triển bởi Team Admin")
+
 
 
