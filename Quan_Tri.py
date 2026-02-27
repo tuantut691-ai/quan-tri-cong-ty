@@ -6,7 +6,7 @@ import re
 from datetime import datetime, timedelta
 
 # --- 1. CẤU HÌNH ---
-st.set_page_config(page_title="Thần Số Học 2026", page_icon="🔮", layout="wide")
+st.set_page_config(page_title="QUẢN TRỊ CÔNG TY 2026", page_icon="🔮", layout="wide")
 
 # --- 2. HÀM CHUYỂN TIẾNG VIỆT THÀNH KHÔNG DẤU LATINH ---
 def to_latinh(text):
@@ -45,7 +45,7 @@ if menu == "Tra cứu":
     if st.session_state["role"] is None:
         pwd = st.text_input("Nhập mật khẩu:", type="password")
         if st.button("Vào hệ thống"):
-            if pwd == "khachhang2026": st.session_state["role"] = "user"; st.rerun()
+            if pwd == "admin2026": st.session_state["role"] = "user"; st.rerun()
             elif pwd == "admin2026": st.session_state["role"] = "admin"; st.rerun()
             else: st.error("Sai mật khẩu!")
         st.stop()
